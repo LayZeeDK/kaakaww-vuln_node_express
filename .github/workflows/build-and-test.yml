@@ -19,6 +19,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
+      - run: npm install --global npm@7.24.2
       - name: Install dependencies
         run: npm install
       - name: Run unit tests
